@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pchris Autos | Contact</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: "#2563eb",
+                light: "#3b82f6",
+                dark: "#1d4ed8",
+              },
+              surface: {
+                800: "#0b1220",
+                700: "#111827",
+                600: "#1f2937",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-surface-800 text-slate-100 antialiased">
+    <!-- Page Wrapper -->
+    <div class="flex min-h-screen flex-col">
+      <!-- Top Navigation -->
+      <header class="border-b border-slate-800 bg-surface-800/95 backdrop-blur">
+        <div class="mx-auto flex w-full items-center justify-between px-10 py-4 md:px-[60px] lg:px-20">
+          <!-- Logo -->
+          <a href="../homepage/index.html" class="flex items-center gap-3">
+            <img src="../homepage/logopchris.svg" alt="Pchris Autos Logo" class="h-8 w-auto sm:h-9" />
+            <span class="hidden text-sm font-semibold tracking-wide text-slate-100 sm:inline">Pchris Autos</span>
+          </a>
+
+          <!-- Centered Nav -->
+          <nav class="hidden flex-1 justify-center text-sm font-medium text-slate-300 sm:flex sm:items-center sm:gap-6">
+            <a href="../homepage/index.html" class="transition hover:text-white">Home</a>
+            <a href="../Inventory page/inventory.html" class="transition hover:text-white">Inventory</a>
+            <a href="../Aboutus/aboutus.html" class="transition hover:text-white">About Us</a>
+            <a href="./contactus.html" class="text-white">Contact</a>
+          </nav>
+
+          <!-- CTA -->
+          <a
+            href="https://wa.me/2348032318353"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden rounded-md bg-brand px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brand-light sm:inline-flex"
+          >
+            Book Appointment
+          </a>
+
+          <!-- Mobile menu button (right on mobile) -->
+          <button
+            id="mobile-menu-toggle"
+            class="inline-flex items-center justify-center rounded-md p-2 text-slate-300 hover:bg-surface-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand sm:hidden"
+            aria-expanded="false"
+            aria-label="Open main menu"
+          >
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden border-t border-slate-800 bg-surface-800 sm:hidden"
+        >
+          <nav class="mx-auto flex w-full flex-col gap-1 px-10 py-3 md:px-[60px] lg:px-20 text-sm font-medium text-slate-200">
+            <a href="../homepage/index.html" class="rounded-md px-2 py-2 hover:bg-surface-700">Home</a>
+            <a href="../Inventory page/inventory.html" class="rounded-md px-2 py-2 hover:bg-surface-700"
+              >Inventory</a
+            >
+            <a href="../Aboutus/aboutus.html" class="rounded-md px-2 py-2 hover:bg-surface-700">About Us</a>
+            <a href="./contactus.html" class="rounded-md px-2 py-2 hover:bg-surface-700">Contact</a>
+            <a
+              href="#book-appointment"
+              class="mt-1 rounded-md bg-brand px-3 py-2 text-xs uppercase tracking-wide text-center text-white hover:bg-brand-light"
+            >
+              Book Appointment
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1">
+        <!-- Hero / Contact Methods -->
+        <section class="border-b border-slate-800 bg-gradient-to-b from-surface-800 to-surface-700">
+          <div class="mx-auto w-full px-10 py-10 md:px-[60px] md:py-14 lg:px-20 lg:py-16">
+            <div class="text-center">
+              <h1
+                class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl"
+              >
+                Get in Touch
+              </h1>
+              <p class="mx-auto mt-4 max-w-2xl text-sm text-slate-300 sm:text-base">
+                Whether you're looking to acquire a new vehicle or have questions about our
+                services, our team is here to assist you.
+              </p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div
+              class="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-5 lg:mt-12 lg:gap-6"
+            >
+              <!-- Call Us -->
+              <div
+                class="flex flex-col items-center rounded-xl border border-slate-800 bg-surface-700/60 p-5 text-center shadow-sm backdrop-blur sm:p-6"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand"
+                  aria-hidden="true"
+                >
+                  <!-- Phone Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M5.5 4A2.5 2.5 0 0 1 8 1.5h1.05a2 2 0 0 1 1.95 1.52l.7 2.8a2 2 0 0 1-.72 2.07L9.5 9.5a10.5 10.5 0 0 0 5 5l1.6-1.48a2 2 0 0 1 2.07-.43l2.8.93A2 2 0 0 1 22.5 16V17a2.5 2.5 0 0 1-2.5 2.5H18A14 14 0 0 1 4.5 6V4.5A.5.5 0 0 1 5 4h.5Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-base font-semibold text-white">Call Us</h3>
+                <p class="mt-1 text-xs text-slate-400 sm:text-sm">Mon–Fri from 9am to 6pm</p>
+                <a
+                  href="tel:+15551234567"
+                  class="mt-3 text-sm font-medium text-brand-light hover:text-brand"
+                >
+                  +234 803 231 8353
+                </a>
+              </div>
+
+              <!-- Email Us -->
+              <div
+                class="flex flex-col items-center rounded-xl border border-slate-800 bg-surface-700/60 p-5 text-center shadow-sm backdrop-blur sm:p-6"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand"
+                  aria-hidden="true"
+                >
+                  <!-- Mail Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="M3 7.5 11.4 12a1.8 1.8 0 0 0 1.8 0L21 7.5" />
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-base font-semibold text-white">Email Us</h3>
+                <p class="mt-1 text-xs text-slate-400 sm:text-sm">
+                  We'll respond within 24 hours
+                </p>
+                <a
+                  href="mailto:sales@pchrisautos.com"
+                  class="mt-3 text-sm font-medium text-brand-light hover:text-brand"
+                >
+                  sales@pchrisautos.com
+                </a>
+              </div>
+
+              <!-- Visit Us -->
+              <div
+                class="flex flex-col items-center rounded-xl border border-slate-800 bg-surface-700/60 p-5 text-center shadow-sm backdrop-blur sm:p-6"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand"
+                  aria-hidden="true"
+                >
+                  <!-- Location Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M12 21s-6-5.373-6-10a6 6 0 1 1 12 0c0 4.627-6 10-6 10Z"
+                    />
+                    <circle cx="12" cy="11" r="2.5" />
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-base font-semibold text-white">Visit Us</h3>
+                <p class="mt-1 text-xs text-slate-400 sm:text-sm">By Appointment Only</p>
+                <p class="mt-3 text-sm font-medium text-slate-200">
+                 Testing Ground, Lagos, Nigeria
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="border-b border-slate-800 bg-surface-800">
+          <div class="mx-auto w-full px-10 py-10 md:px-[60px] md:py-12 lg:px-20 lg:py-14">
+            <a
+              href="https://www.google.com/maps/place/Testing+Ground+Bus+Stop/@6.613462,3.3522221,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93cb9599c79f:0x335c205a6fcb0b36!8m2!3d6.613462!4d3.354797!16s%2Fg%2F1hhwkv007?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block overflow-hidden rounded-2xl"
+            >
+              <img
+                src="/Contactus/Screenshot 2025-12-16 at 3.43.10 PM.png"
+                alt="Testing Ground Bus Stop - Google Maps"
+                class="h-64 w-full object-cover sm:h-72 lg:h-80 transition hover:scale-105"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- Book a Private Viewing -->
+        <section
+          id="book-appointment"
+          class="border-b border-slate-800 bg-gradient-to-b from-surface-700 to-surface-800"
+        >
+          <div class="mx-auto w-full px-10 py-10 md:px-[60px] md:py-12 lg:px-20 lg:py-16">
+            <div
+              class="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.1fr)] lg:items-start"
+            >
+              <!-- Copy -->
+              <div>
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-light sm:text-[0.7rem]"
+                >
+                  Visit Our Showroom
+                </p>
+                <h2
+                  class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl"
+                >
+                  Book a Private Viewing
+                </h2>
+                <p class="mt-4 max-w-xl text-sm text-slate-300 sm:text-base">
+                  Experience our collection in person. Schedule a private appointment with one of
+                  our automotive specialists to discuss your requirements and take a test drive.
+                </p>
+
+                <div class="mt-8 grid gap-8 text-sm text-slate-300 sm:grid-cols-2">
+                  <div>
+                    <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                      Showroom Hours
+                    </h3>
+                    <dl class="mt-3 space-y-1.5">
+                      <div class="flex justify-between gap-4">
+                        <dt class="text-slate-400">Mon – Fri</dt>
+                        <dd>9am – 8pm</dd>
+                      </div>
+                      <div class="flex justify-between gap-4">
+                        <dt class="text-slate-400">Sat – Sun</dt>
+                        <dd>10am – 6pm</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                      Location
+                    </h3>
+                    <p class="mt-3 max-w-xs text-sm text-slate-300">
+                      Testing Ground<br />
+                      Lagos, Nigeria
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Appointment Form -->
+              <div
+                class="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl shadow-black/40 backdrop-blur sm:p-6 lg:p-7"
+              >
+                <form class="space-y-4">
+                  <div class="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <label
+                        for="full-name"
+                        class="block text-xs font-medium uppercase tracking-wide text-slate-300"
+                        >Full Name</label
+                      >
+                      <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        autocomplete="name"
+                        class="mt-2 w-full rounded-md border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="phone"
+                        class="block text-xs font-medium uppercase tracking-wide text-slate-300"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        class="mt-2 w-full rounded-md border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                        placeholder="+234"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-xs font-medium uppercase tracking-wide text-slate-300"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        class="mt-2 w-full rounded-md border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="date"
+                        class="block text-xs font-medium uppercase tracking-wide text-slate-300"
+                        >Preferred Date</label
+                      >
+                      <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        class="mt-2 w-full rounded-md border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-xs font-medium uppercase tracking-wide text-slate-300"
+                      >Message / Car of Interest</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      class="mt-2 w-full rounded-md border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                      placeholder="I am interested in the..."
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="mt-2 inline-flex w-full items-center justify-center rounded-md bg-brand px-4 py-2.5 text-sm font-semibold tracking-wide text-white shadow-md shadow-brand/30 transition hover:bg-brand-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                  >
+                    Request Appointment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-surface-900/90 border-t border-slate-800">
+        <div class="mx-auto w-full px-10 pt-10 pb-6 md:px-[60px] lg:px-20 lg:pt-12">
+          <div class="grid gap-8 text-sm text-slate-300 md:grid-cols-4">
+            <!-- Brand -->
+            <div class="space-y-4 md:col-span-2 lg:col-span-1">
+              <div class="flex items-center gap-3">
+                <img
+                  src="../homepage/logopchris.svg"
+                  alt="Pchris Autos Logo"
+                  class="h-8 w-auto"
+                />
+                <span class="text-sm font-semibold tracking-wide text-slate-100">
+                  Pchris Autos
+                </span>
+              </div>
+              <p class="max-w-xs text-xs text-slate-400">
+                Experience the pinnacle of automotive engineering. We curate the finest collection
+                of luxury and performance vehicles for the discerning driver.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                Quick Links
+              </h3>
+              <ul class="mt-3 space-y-2 text-xs text-slate-300">
+                <li><a href="../homepage/index.html" class="hover:text-white">Home</a></li>
+                <li>
+                  <a href="../Inventory page/inventory.html" class="hover:text-white"
+                    >Inventory</a
+                  >
+                </li>
+                <li>
+                  <a href="../Aboutus/aboutus.html" class="hover:text-white">About Us</a>
+                </li>
+                <li>
+                  <a href="./contactus.html" class="hover:text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                Contact
+              </h3>
+              <ul class="mt-3 space-y-2 text-xs text-slate-300">
+                <li>Testing Ground,<br />Lagos, Nigeria</li>
+                <li>+234 803 231 8353</li>
+                <li>sales@pchrisautos.com</li>
+              </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                Follow Us
+              </h3>
+              <div class="mt-3 flex gap-3">
+                <button
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition hover:border-brand hover:bg-brand/10 hover:text-white"
+                  aria-label="Visit our Facebook"
+                >
+                  F
+                </button>
+                <button
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition hover:border-brand hover:bg-brand/10 hover:text-white"
+                  aria-label="Visit our Instagram"
+                >
+                  I
+                </button>
+                <button
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition hover:border-brand hover:bg-brand/10 hover:text-white"
+                  aria-label="Visit our Twitter"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div
+            class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-slate-800 pt-4 text-[11px] text-slate-500 sm:flex-row"
+          >
+            <p>© 2024 Pchris Autos. All rights reserved.</p>
+            <div class="flex gap-4">
+              <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+              <a href="#" class="hover:text-slate-300">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        });
+      }
+    </script>
+    <!-- WhatsApp Sticky Widget -->
+    <a
+      href="https://wa.me/2348032318353"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand shadow-lg transition hover:scale-110 hover:bg-brand-light focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-surface-800"
+    >
+      <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </body>
+  </html>
+
+
