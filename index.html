@@ -29,13 +29,23 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
         }
-        
+
         .font-display {
             font-family: 'Inter', sans-serif;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .animate-drive, .animate-drive-reverse {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                will-change: transform, opacity;
+            }
         }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
